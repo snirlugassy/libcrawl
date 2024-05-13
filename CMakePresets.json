@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Visual Studio Community 2022 Release - x86_amd64",
+            "description": "Using compilers for Visual Studio 17 2022 (x86_x64 architecture)",
+            "generator": "Visual Studio 17 2022",
+            "toolset": "host=x86",
+            "architecture": "x64",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+            }
+        }
+    ]
+}
